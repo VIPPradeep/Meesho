@@ -1,0 +1,663 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    width: 1516px;
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+     .product-list .content-list a{
+        color: rgba(0, 0, 0, 0.523);
+     }
+    li{
+        list-style-type: none;
+    }
+}
+.head{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    width: 1516px;
+}
+.head1 .logo{
+    width: 200px;
+    height: 50px;
+}
+
+.head1 {
+    display: flex;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 80px;
+    right: 80px;
+    width: 1320px;
+    
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: rgb(249, 249, 249);
+}
+.search-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.search-container #searchbox {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    background: none;
+}
+
+
+.nav{
+    display:flex ;
+    list-style-type: none;
+    gap: 35px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* #nav li a:hover{
+    color: rgb(143, 14, 169);
+    border-bottom:3px solid rgb(143, 14, 169); */
+    
+    
+
+.horizontal{
+    flex-direction: row;
+}
+.vertical{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nav img {
+    width: 50px; 
+    height:50px;
+}
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+/* Apply vertical line to all items except the first one 
+.list:not(:last-child) {
+    border-left: 1px solid #d0cece;  Vertical line 
+    padding-left: 15px;  Space after the border 
+}*/
+
+.horizontal::after{
+    content: "|";
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.425);
+}
+.list1::after{
+    content: "|";
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.425);
+}
+.head2{
+    display: flex;
+    height: 6vh;
+    position: relative;
+    left: 80px;
+    right: 80px;
+    width: 1320px;
+    
+}
+
+.head2 li{
+    font-size: 16px;
+    color: #353535;
+    font-family: 'Times New Roman', Times, serif;
+}
+.items {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping */
+    
+    
+}
+
+/* Hide scrollbar for Webkit browsers */
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.items ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.items li {
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.items li:hover {
+    border-bottom: 3px solid rgb(174, 11, 174);
+    color: rgb(142, 37, 152);
+}
+.nav .list:hover {
+    border-bottom: 3px solid rgb(174, 11, 174);
+    color: rgb(112, 5, 112);
+}
+.nav li a:hover{
+    color: purple;
+}
+
+footer{
+    height: 10vh;
+    background-color: aqua;
+}
+
+
+.product-list{
+    display: none;
+     position: absolute;
+     top: 100%;
+     left: 0px;
+     background-color: white;
+     color: purple;
+     gap: 20px;
+     border: 1px solid purple;
+     width: 1350px;
+     height: fit-content;
+     z-index:1000;
+     
+     
+    
+}
+.dropdown:hover .product-list{
+    display:flex;
+    justify-content: start;
+    
+    /* align-content: start; */
+       
+}
+.content-list ul li:hover a{
+    color: black;
+    
+}
+
+/* .dropdown:hover .product-list li a{
+color: purple;
+} */
+.product-list ul{
+    display: block;
+}
+.product-list .content-list ul li{
+   margin-top: 10px;
+}
+
+.product-list .content-list a{
+    text-decoration: none;
+    color: black;
+}
+.bg2{
+    background-color: rgba(182, 21, 207, 0.105);
+}  
+/* Section Css */
+section{
+    
+    height: 500vh;
+    width: 1516px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+ /*banner1 css  */
+.Parentbanner{
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 12%;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    /* border: 1px solid black; */
+    
+}
+.banners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+.banner1
+{
+    width: 50%;
+   height: 100%;
+    padding: 30px;
+    background-color: rgba(192, 190, 190, 0.114);
+
+}
+ h1{
+    font-size: 60px;
+}
+.bannerchild1 ul{
+    display: flex;
+    width: fit-content;
+    height: 50px;
+    gap: 30px;
+    justify-content: space-between;
+    list-style-type: none;
+ 
+    /* align-items: center; */
+}
+.bannerchild1 ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.bannerchild1 ul .parentgrandchild::after{
+    content: "|";
+    left: 10px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.523);
+}
+.bannerchild2{
+    background-color: rgb(172, 36, 158);
+    color: white;
+    width: 330px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.banner2 .bannerchild1 img{
+    width: 648px;
+    height:442px;
+
+}
+.Parentbanner .bannerchild2 img{
+        width: 30px;
+        height: 30px;
+}
+.banner2
+{
+    width: 50%;
+   height: 100%;
+
+
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 100px;
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #b583b5; /* Light purple line */
+    margin: 0 110px; /* Adjust spacing */
+}
+
+/* Banner 2 CSS*/
+.Parentbanner2{
+    background-image: url(../Meesho/Assets/bg.jpg);
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 500px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    border-radius: 10px;
+    top: 50px;
+    
+}
+.Parentbanner2 .banner-content{
+    width: 40%;
+    /* position: relative; */
+    /* bottom: 60px; */
+    
+}
+.Parentbanner2 .banner-content1{
+    width: 60%;
+    position: relative;
+    
+  
+}
+.imgbanner2{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.557);
+    
+}
+.imgbanner1{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.557);
+}
+.childbanner{
+    display: flex;
+    flex-direction: column;
+    
+}
+.childbanner span{
+    margin-top: 10px;
+}
+.Parentbanner2 .childbanner1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+}
+.Parentbanner2 .banner-content .a{
+    /* position: relative;
+    top: 20px;
+    left: 50px;
+    bottom: 100px ;
+    margin-left: ; */
+}
+.Parentbanner2 .banner1{
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 450px;
+    border-radius: 25px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.Parentbanner2 a .banner2{
+    height: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+.Parentbanner2  .banner2{
+    display: flex; 
+}
+.Parentbanner2  .banner2 .a-banner2{
+    width: 350px;
+    height: 400px;
+}
+.Parentbanner2 .banner2 .banner2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 50px;
+    
+}
+.Parentbanner2 .banner-content1 .banner2{
+    justify-content: space-evenly;
+    gap: 40px;
+    border-radius: 25px;
+}
+.Parentbanner2 .banner2 .childbanner1{
+    margin-top: -50px;
+}
+.banner-content1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: -10px;
+    color: whitesmoke;
+}
+.Parentbanner2 a:hover{
+    color: black;
+}
+
+/* Banner3 CSS */
+
+.banner3 img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.297);
+    border-radius: 25px;
+}
+.Parentbanner3{
+    background-image: url(Assets/bg.jpg);
+    width: 1300px;
+    height: 500px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    display: flex;
+    border-radius: 10px;
+    
+}
+
+
+.Parentbanner3 .childbanner3{
+    background-color: white;
+    border-radius: 25px;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.Parentbanner3 .content-banner{
+    width: 70%;
+    display: flex;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Parentbanner3 .content-banner span{
+    background-color: rgba(247, 211, 8, 0.9);
+    display: block;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 18px;
+    left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.Parentbanner3 .headname{
+    width: 30%;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    top: 175px;
+    left: 40px;
+}
+
+.Parentbanner3 .headname h2{
+font-size: 80px;
+color: white;
+
+-webkit-text-stroke: 1px rgba(255, 217, 0, 0.66); 
+
+}
+.Parentbanner3 .headname button{
+    width: 180px;
+    height: 50px;
+    outline: none;
+    background-color: ;
+    border-radius: 25px;
+    background-color: gold;
+    position: relative;
+    top: 25px;
+   
+}
+.Parentbanner3 .headname button a{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgba(255, 217, 0, 0.66); 
+}
+.Parentbanner4{
+    margin-top: 80px;
+}
+
+/* download dropdown */
+.head1 .nav .dropdown1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     display: none;
+     border: 1px solid black;
+     border-radius: 8px;
+     position: absolute;
+     top: 90px;
+     left: 620px;
+     width: 220px;
+     height: 200px;
+     justify-content: space-between;
+     background-color: white;
+     padding:20px;
+     justify-items: center;
+     align-items: center;
+ }
+ .horizontal:hover .dropdown1{
+     display: flex;
+     flex-direction: column;
+     z-index: 1000;
+     
+ }
+ .head1 .nav .dropdown1 img{
+     width: 30px;
+     height: 30px;
+ }
+ .head1 .nav .dropdown1 div{
+     text-align: center;
+     
+ }
+ .head1 .nav .dropdown1 li{
+     display: flex;
+     background-color: black;
+     gap: 20px;
+     color: white;
+     width: 180px;
+     height:48px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+ }
+ .head1 .nav .dropdown1 .apple{
+     background-color: white;
+ }
+ .dropdown1 h4{
+     color: black;
+ }
+ 
+ 
+
+/* Profile Dropdown */
+.Profile-dropdown{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: absolute;
+    top: 80px;
+    left: 1150px;
+    width: 220px;
+    height: 200px;
+    background-color: white;
+    
+    
+}
+
+.vertical:hover .Profile-dropdown{
+    display: flex;
+    justify-content: center;
+    
+    z-index: 1000;
+
+}
+.vertical .profile , .profile2{
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+}
+.vertical .Profile-dropdown a:hover{
+    color: white;
+}
+.vertical .Profile-dropdown a{
+    background-color: purple;
+    color: white;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.vertical .Profile-dropdown li {
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.section-title2::before,
+.section-title2::after {
+    content: "-";
+    flex: 1;
+    height: 1px;
+    font-size: 18px;
+    margin: 0 15px;
+    color: rgba(0, 0, 0, 0.349);
+}
+.section-title2 {
+    position: relative;
+    top: 10px;
+}
+.profile2{
+    position: relative;
+    top: 18px;
+}
+.vertical .profile h3 ,h6 {
+    color: black;
+    
+}
+
+/*  */
