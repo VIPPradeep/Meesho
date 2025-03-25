@@ -69,13 +69,13 @@
     }
     .Profile-dropdown{
         position: absolute;
-        top: 120px;
-        left: 290px;
+        top: 100px;
+        left: -55px;
         width: 200px;
         background: white;
+    }   
         
-        
-     }
+     
      /* Section */
      section{
         height: 500vh;
@@ -112,6 +112,9 @@
      }
      .Parentbanner .banner1 .bannerchild2{
         width: 230px;
+        position: relative;
+        left: 10px;
+        bottom: 10px;
      }
 
      .Parentbanner .banner1 .bannerchild1 ul img{
