@@ -20,21 +20,20 @@
     .head1 {
         display: flex;
         height: 15vh;
-        left: 10px;
+        left: 30px;
         justify-content: space-between;
         gap: 20px;
         align-items: center;
         width: 480px;
         
     }
+    .head1 nav{
+        position: relative;
+        left: 10px;
+    }
 
-    .head1 .search-container{
-        width: 250px;
-    }
-    .head1 #searchbox{
-        width: 100%;
-        
-    }
+    
+   
     
     .head1 .logo{
         width: 180px;
@@ -42,10 +41,10 @@
     .head2 {
         display: flex;
         height: 10vh;
-        left: 10px;
+        left: 40px;
         justify-content: space-between;
         align-items: center;
-        width: 480px;
+        width: 550px;
         right: 0px;
         
     }
@@ -125,7 +124,7 @@
         width: 550px;
         height: 200px;
         position: relative;
-        left: 10px;
+        left: 50px;
         right: 30px;
      }
      .section-title{
@@ -208,7 +207,7 @@
 section{
    height: 500vh;
    width: 768px;
-   margin-top: 60px;
+   margin-top: 30px;
 }
 /* banner 1 */
 .Parentbanner .banner1{
