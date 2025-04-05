@@ -179,7 +179,7 @@
 }
 
 .cards-container {
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 220px);
 }
 .multiple-Cards {
     border: 2px solid rgba(0, 0, 0, 0.215);
