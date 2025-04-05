@@ -19,19 +19,18 @@
     }
     .head1 {
         display: flex;
-        height: 15vh;
+        height: 9vh;
         left: 30px;
         justify-content: space-between;
         gap: 20px;
         align-items: center;
-        width: 480px;
+        width: 580px;
         
     }
     .head1 nav{
         position: relative;
         left: 10px;
     }
-
     
    
     
@@ -40,7 +39,7 @@
     }
     .head2 {
         display: flex;
-        height: 10vh;
+        height: 6vh;
         left: 40px;
         justify-content: space-between;
         align-items: center;
@@ -52,7 +51,7 @@
         display: none;
     }
     .head1 .vertical{
-        gap: 20px;
+        gap: 0px;
     }
     .head2 ul li{
         font-size: 22px;
@@ -77,8 +76,8 @@
         
      
      /* Section */
-     section{
-        height: 500vh;
+     #section-banner{
+        height: fit-content;
         width: 580px;
         margin-top: 30px;
      }
@@ -136,6 +135,123 @@
      .Parentbanner2 , .Parentbanner3{
         display: none;
      }
+     
+ /* Product section */
+ .card-products{
+    position: relative;
+    left: 25px;
+    height: fit-content;
+   width: 580px;
+   margin-top: 100px;
+}
+.card-filter{
+    width: 200px;
+}
+.dropdown-label {
+    font-size: 15px;
+}
+.filter{
+    width: 80px;
+    font-size: 15px;
+}
+.filter-container{
+    width: 150px;
+}
+.filter_1 {
+    height: 30px;
+}
+
+.filter-header {
+    height: 40px;
+}
+.filter-header h3 {
+    font-size: 12px;
+}
+
+#search-box {
+    width: 80%;
+    height: 20px;
+    padding: 0px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.cards-container {
+    grid-template-columns: repeat(2, 200px);
+}
+.multiple-Cards {
+    border: 2px solid rgba(0, 0, 0, 0.215);
+    width: 95%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .product-images {
+    width: 100%;
+    height: 100px;
+}
+
+.product-name {
+    font-weight: normal;
+    font-size: 10px;
+    color: rgb(59, 59, 59);
+}
+
+.product-price {
+    font-size: 12px;
+    font-weight: 100;
+    align-items: center;
+}
+.product-price del {
+    font-weight: normal;
+    font-size: 10px;
+    color: #555;
+    position: relative;
+    top: 0px;
+}
+.product-price span {
+    position: relative;
+    left: 10px;
+}
+
+.product-Review {
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    top: -20px;
+}
+
+.child-Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    left: 0px;
+    height: 80px;
+    row-gap: 20px;
+    z-index: 1;
+   
+}
+.starRating {
+    background-color: green;
+    width: 50px;
+    color: white;
+    border-radius: 18px;
+    height: 15px;
+    padding: 0px;
+}
+.product-reviews-count {
+    text-align: center;
+    height: 25px;
+    position: relative;
+    top: 0px;
+    font-size: 13px;
+}
+.starRating p {
+   font-size: 15px;
+}
     
 }
 
@@ -163,7 +279,7 @@
     }
     .head1 {
         display: flex;
-        height: 15vh;
+        height: 10vh;
         justify-content: space-between;
         align-items: center;
         left: 10px;
@@ -172,7 +288,7 @@
     }
     .head2 {
         display: flex;
-        height: 10vh;
+        height: 7vh;
         left: 10px;
         justify-content: space-between;
         align-items: center;
@@ -207,8 +323,8 @@
    
 }
 /* Section */
-section{
-   height: 500vh;
+#section-banner {
+   height: fit-content;
    width: 768px;
    margin-top: 30px;
 }
@@ -217,8 +333,11 @@ section{
    height: 400px;
 }
 .Parentbanner .banner2 img{
-   width: 100%;
+   width: 360px;
    height: 400px;
+}
+.Parentbanner3{
+    width: 750px;
 }
 .Parentbanner .banner2{
     position: relative;
@@ -313,6 +432,28 @@ section{
    left: 10px;
 }
 
+ /* Product section */
+ .card-products{
+    position: relative;
+    left: 25px;
+    height: fit-content;
+   width: 740px;
+   margin-top: 100px;
+}
+.card-filter{
+    width: 255px;
+}
+.filter{
+    width: 120px;
+}
+.filter-container{
+    width: 200px;
+}
+
+.cards-container {
+    grid-template-columns: repeat(2, 280px);
+}
+
 }
 
 
@@ -337,7 +478,7 @@ section{
     }
     .head1 {
         display: flex;
-        height: 15vh;
+        height: 11vh;
         left: 10px;
         justify-content: space-between;
         align-items: center;
@@ -347,7 +488,7 @@ section{
     }
     .head2 {
         display: flex;
-        height: 10vh;
+        height: 6vh;
         left: 10px;
         justify-content: space-between;
         align-items: center;
@@ -368,10 +509,14 @@ section{
         
     }
     /* Section */
-    section{
-        height: 500vh;
+    #section-banner , .card-products{
+        height: fit-content;
         width: 1100px;
         margin-top: 40px;
+        
+    }
+    #section-banner{
+        margin-left: 50px;
     }
     /* banner 1 */
     .Parentbanner .banner1{
@@ -480,6 +625,26 @@ section{
         position: relative;
         right: 20px;
     }
+
+    /* Product section */
+    .card-products{
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .card-filter{
+        width: 255px;
+    }
+    .filter{
+        width: 150px;
+    }
+    .filter-container{
+        width: 250px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(3, 280px);
+    }
+
 }
 
 /* Desktop and Default media screen */
@@ -714,9 +879,9 @@ section{
         background-color: rgba(182, 21, 207, 0.105);
     }  
     /* Section Css */
-    section{
+    #section-banner , .card-products{
     
-        height: 500vh;
+        height: fit-content;
         width: 1516px;
         background-color: white;
         position: relative;

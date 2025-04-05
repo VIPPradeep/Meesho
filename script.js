@@ -118,15 +118,41 @@ const Card_Data = [
         starrating:'4.9',
         reviewscount:'1500+ Reviews',
         description: ''
+    },
+
+    {
+        id: '11',
+        image: 'https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/a/3/l/nb126-aster-v5-4-upto-50hr-playtime-45ms-latency-fast-charging-original-imaha88xxaffkqp6.jpeg?q=70',
+        name: 'Aroma NB126 Aster V5.4 45Ms Latency Fast Charging RGB Gaming TWS Bluetooth',
+        price: '₹469',
+        oldprice:'₹2999',
+        discount:'84% off',
+        Ratingicon:'https://i.ibb.co/cSDFFtyY/star.png',
+        starrating:'3.5',
+        reviewscount:'100+ Reviews',
+        description: ''
+    },
+    {
+        id: '12',
+        image: 'https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/k/j/w/10-casual-10-rgy-blue-original-imah9jucpcgjcceh.jpeg?q=70',
+        name: 'Lite Sports Casuals For Men',
+        price: '₹500',
+        oldprice:'₹1200',
+        discount:'66% off',
+        Ratingicon:'https://i.ibb.co/cSDFFtyY/star.png',
+        starrating:'5',
+        reviewscount:'100+ Reviews',
+        description: ''
     }
 ];
 
-
+document.addEventListener("DOMContentLoaded", function () {
 const card_container = document.getElementById('cards-container');
-Card_Data.forEach((products)=>{
+Card_Data.forEach((products,index)=>{
 
     const card = document.createElement('div')
     card.classList.add('multiple-Cards')
+    card.classList.add(`card-${index + 1}`);
     card_container.appendChild(card)
 
 
@@ -185,3 +211,48 @@ Card_Data.forEach((products)=>{
     review.textContent = products.reviewscount
     fullReview.appendChild(review)
 })
+});
+
+
+
+// 
+document.addEventListener("DOMContentLoaded", function () {
+    // Hide all hidden elements initially
+    document.querySelectorAll(".hidden").forEach(item => {
+        item.style.display = "none";
+    });
+
+    // Attach click event to all "Show More" buttons dynamically
+    document.querySelectorAll(".show-more-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            let targetClass = this.getAttribute("data-target");
+            toggleItems(targetClass, this);
+        });
+    });
+});
+
+// Toggle hidden items in a given section (Category, Price, etc.)
+function toggleItems(targetClass, button) {
+    let hiddenItems = document.querySelectorAll(`.${targetClass} .hidden`);
+
+    if (hiddenItems.length === 0) return; // Prevent errors if there are no hidden items
+
+    let isHidden = hiddenItems[0].style.display === "none" || hiddenItems[0].style.display === "";
+
+    hiddenItems.forEach(item => {
+        item.style.display = isHidden ? "block" : "none";
+    });
+
+    button.textContent = isHidden ? "Show Less" : "Show More";
+}
+
+// Search Filter for Categories
+function filterCategories() {
+    let input = document.getElementById("search-box").value.toLowerCase();
+    let categories = document.querySelectorAll("#category-list li");
+
+    categories.forEach(item => {
+        let text = item.innerText.toLowerCase();
+        item.style.display = text.includes(input) ? "flex" : "none";
+    });
+}

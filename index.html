@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="Section.css"> -->
     <link rel="stylesheet" href="Media.css">
+    
 </head>
 <body>
     <header class="head">
@@ -725,7 +726,7 @@
     </header>
     <hr>
 </header>
-    <section>
+    <section id="section-banner">
 <!-- Banner1 -->
 <div class="Parentbanner">
     <div class="banners banner1">
@@ -861,9 +862,122 @@
 </a>
 </div>
 </div>
+ </section>
+  
+ <section class="card-products">
+    <aside class="card-filter">
+        <div class="filter_1">
+        <label for="filter" class="dropdown-label">Sort by :</label>
+        <select class="filter" >
+            <option selected>Relevance</option>
+            <option>New Arrivals</option>
+            <option>Price (High to Low)</option>
+            <option>Price (Low to High)</option>
+            <option>Ratings</option>
+        </select>
+    </div>
+    <div class="filter-container">
+        <div class="filter-header">
+            <h3>Filters</h3>
+            <input type="text" id="search-box" placeholder="🔍 Search" onkeyup="filterCategories()">
+        </div>
+    
+        <!-- Category Filter -->
+        <div class="filter-section category-filter">
+            <h4>Category</h4>
+            <ul id="category-list">
+                <li><a href="?category=baby-sleeping-bags"><input type="checkbox"> Baby Sleeping Bags</a></li>
+                <li><a href="?category=bluetooth-headphones"><input type="checkbox"> Bluetooth Headphones</a></li>
+                <li><a href="?category=capris"><input type="checkbox"> Capris</a></li>
+                <li class="hidden"><a href="?category=gaming-finger-sleeves"><input type="checkbox"> Gaming Finger
+                        Sleeves</a></li>
+                <li class="hidden"><a href="?category=jeans"><input type="checkbox"> Jeans</a></li>
+            </ul>
+            <button class="show-more-btn" data-target="category-filter">Show More</button>
+        </div>
+    
+        <!-- Gender Filter -->
+        <div class="filter-section">
+            <h4>Gender</h4>
+            <ul>
+                <li><a href="?gender=men"><input type="checkbox"> Men</a></li>
+                <li><a href="?gender=women"><input type="checkbox"> Women</a></li>
+                <li><a href="?gender=kids"><input type="checkbox"> Kids</a></li>
+            </ul>
+        </div>
+    
+        <!-- Color Filter -->
+        <div class="filter-section">
+            <h4>Color</h4>
+            <ul>
+                <li><a href="?color=red"><input type="checkbox"> Red</a></li>
+                <li><a href="?color=blue"><input type="checkbox"> Blue</a></li>
+                <li><a href="?color=green"><input type="checkbox"> Green</a></li>
+                <li><a href="?color=black"><input type="checkbox"> Black</a></li>
+                <li><a href="?color=white"><input type="checkbox"> White</a></li>
+            </ul>
+        </div>
+    
+        <!-- Discount Filter -->
+        <div class="filter-section">
+            <h4>Disconts</h4>
+            <ul>
+                <li><a href="#"><input type="checkbox"> 10%</a></li>
+                <li><a href="#"><input type="checkbox"> 20%</a></li>
+                <li><a href="#"><input type="checkbox"> Below 50%</a></li>
+                <li><a href="#"><input type="checkbox"> Above 50%</a></li>
+                <li><a href="#"><input type="checkbox"> All Disconts</a></li>
+            </ul>
+        </div>
 
-    </section>
+    <!-- Price Filter -->
+
+        <div class="filter-section">
+            <h3>Price</h3>
+            <div class="price-list">
+                <a href="#">Under ₹ 149</a>
+                <a href="#">Under ₹ 199</a>
+                <a href="#">Under ₹ 249</a>
+                <a href="#">Under ₹ 299</a>
+                <a href="#">Under ₹ 349</a>
+                <a href="#">Under ₹ 399</a>
+                <a href="#">Under ₹ 449</a>
+                <a href="#">Under ₹ 499</a>
+                <a href="#" class="hidden">Under ₹ 99</a>
+                <a href="#" class="hidden">₹ 0 - ₹ 99</a>
+                <a href="#" class="hidden">₹ 100 - ₹ 149</a>
+                <a href="#" class="hidden">₹ 150 - ₹ 199</a>
+            </div>
+    
+            <button class="show-more-btn" data-target="price-list">Show More</button>
+        </div>
+
+
+         <!-- Discount Filter -->
+         <div class="filter-section">
+            <h4>Rating</h4>
+            <ul class="rating-filter-img">
+                <li><a href="#"><input type="checkbox"> Above 4 <img src="https://i.ibb.co/cSDFFtyY/star.png"></a></li>
+                <li><a href="#"><input type="checkbox"> Below 4 <img src="https://i.ibb.co/cSDFFtyY/star.png"></a></li>
+                <li><a href="#"><input type="checkbox"> 3 <img src="https://i.ibb.co/cSDFFtyY/star.png"></a></li>
+                <li><a href="#"><input type="checkbox"> 2 <img src="https://i.ibb.co/cSDFFtyY/star.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+   
+
+    
+
+    </aside>
+    <main class="cards-container" id="cards-container">
+                
+    </main>
+</section>
   
-  
+<script src="script.js"></script>
 </body>
+
 </html>
