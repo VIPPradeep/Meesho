@@ -252,6 +252,7 @@
 .starRating p {
    font-size: 15px;
 }
+
     
 }
 
@@ -268,6 +269,16 @@
         padding: 0;
         box-sizing: border-box;
     }
+    .multiple-Cards:hover .child-Cards {
+        position: relative;
+        top: -30px;
+        left: 5px;
+        height: 150px;
+        background-color: white;
+        border-radius: 20px;
+        transition: top 2s cubic-bezier(0.25, 1, 0.5, 1), height 2s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+      }
+
     .head{
         
         position: sticky;
@@ -453,6 +464,10 @@
 .cards-container {
     grid-template-columns: repeat(2, 280px);
 }
+.multiple-Cards:hover .product-Review {
+    display: flex;
+    transition: display 0.2s ease-in-out;
+  }
 
 }
 
@@ -468,6 +483,19 @@
         padding: 0;
         box-sizing: border-box;
     }
+    .multiple-Cards:hover .product-Review {
+        display: flex;
+        transition: display 0.2s ease-in-out;
+      }
+      .multiple-Cards:hover .child-Cards {
+        position: relative;
+        top: -30px;
+        left: 5px;
+        height: 150px;
+        background-color: white;
+        border-radius: 20px;
+        transition: top 2s cubic-bezier(0.25, 1, 0.5, 1), height 2s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+      }
     .head{
         
         position: sticky;
@@ -659,6 +687,15 @@
         margin: 0px;
         width: 1516px;
     }
+    .multiple-Cards:hover .child-Cards {
+        position: relative;
+        top: -30px;
+        left: 5px;
+        height: 150px;
+        background-color: white;
+        border-radius: 20px;
+        transition: top 2s cubic-bezier(0.25, 1, 0.5, 1), height 2s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
+      }
         
         a{
             text-decoration: none;
@@ -1315,6 +1352,10 @@
         color: black;
         
     }
+    .multiple-Cards:hover .product-Review {
+        display: flex;
+        transition: display 0.2s ease-in-out;
+      }
     
     /*  */
     

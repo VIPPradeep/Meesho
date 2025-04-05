@@ -947,20 +947,9 @@ color: white;
   
   }
   
-  .multiple-Cards:hover .product-Review {
-    display: flex;
-    transition: display 0.2s ease-in-out;
-  }
   
-  .multiple-Cards:hover .child-Cards {
-    position: relative;
-    top: -30px;
-    left: 5px;
-    height: 150px;
-    background-color: white;
-    border-radius: 20px;
-    transition: top 2s cubic-bezier(0.25, 1, 0.5, 1), height 2s cubic-bezier(0.25, 1, 0.5, 1) 0.5s;
-  }
+  
+ 
   
   .multiple-Cards:hover .product-price {
     margin-top: 10px;
